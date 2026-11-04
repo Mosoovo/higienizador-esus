@@ -1,0 +1,10 @@
+HIGIENIZADOR 2.0 — INTERFACE 0.11b (ALPHA)
+
+Base: Interface 0.11a aprovada.
+Novo cabeçalho: logo letreiro à esquerda e cruz letreiro à direita,
+com margens iguais de 12 px, artes originais sobre degradê #000080 → #071d41.
+As margens transparentes dos PNGs foram recortadas sem redesenhar as imagens.
+Logo central, camada anti-piscada, navegador integrado e controles permanecem iguais.
+
+Execute INICIAR.bat. Use INSTALAR.bat apenas se ainda não tiver .venv.
+Interface de teste: não processa nem altera cadastros no PEC.

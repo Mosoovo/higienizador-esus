@@ -1,0 +1,167 @@
+HIGIENIZADOR PEC — VERSÃO 1.0.6
+Guia de instalação e utilização | Windows 10 e 11
+================================================
+
+Leia as instruções na ordem. Você só precisa instalar o Python e as
+bibliotecas na primeira utilização do programa.
+
+--------------------
+
+IMPORTANTE: O operador é responsável por validar as
+informações que serão registradas no PEC.
+
+
+1. ANTES DE COMEÇAR
+------------------
+Você precisará de:
+  - Um computador com Windows 10 ou 11.
+  - Acesso à rede da sua UBS e ao servidor PEC da unidade.
+  - Google Chrome instalado.
+  - Python instalado no Windows.
+  - A pasta do Higienizador extraída de seu arquivo ZIP.
+
+Para instalar o Python e as dependências pela primeira vez, é necessário
+ter acesso à internet. O endereço do PEC, por sua vez, deve funcionar na
+rede em que o computador estiver conectado.
+
+
+2. INSTALAR O PYTHON (NORMALMENTE, SÓ UMA VEZ)
+--------------------------------------------
+PRIMEIRO, VEJA SE JÁ TEM PYTHON:
+  a) Clique no menu Iniciar do Windows.
+  b) Digite cmd e abra o Prompt de Comando.
+  c) Digite: python --version
+  d) Aperte Enter.
+
+Se aparecer "Python 3.12.x" ou "Python 3.13.x", ele já está instalado.
+Pode seguir para o item 3.
+
+SE NÃO TIVER PYTHON:
+  a) Acesse: https://www.python.org/downloads/windows/
+  b) Baixe uma versão estável do Python 3 para Windows (64 bits).
+     Para este programa, sugerimos Python 3.12 ou 3.13.
+  c) Abra o instalador baixado.
+  d) Se aparecer a opção "Add python.exe to PATH", MARQUE-A.
+  e) Clique em "Install Now" e aguarde a instalação terminar.
+  f) Feche o Prompt de Comando, abra-o novamente e digite:
+     python --version
+
+Se o Windows tentar abrir a Microsoft Store em vez do Python, ou se o
+comando continuar sem funcionar, solicite apoio ao setor de informática
+para ajustar a instalação ou os aliases de execução do Windows.
+
+
+3. INSTALAR O HIGIENIZADOR
+-------------------------
+  a) Localize o arquivo ZIP do Higienizador.
+  b) Clique com o botão direito e escolha "Extrair tudo".
+  c) Abra a pasta extraída. Nela devem aparecer os arquivos:
+       INSTALAR.bat
+       INICIAR.bat
+       higienizador_v106.py
+       requirements.txt
+       LEIA-ME.txt
+  d) Dê dois cliques em INSTALAR.bat.
+  e) Aguarde a conclusão. Isso pode levar alguns minutos.
+  f) Quando aparecer "Pressione qualquer tecla para continuar",
+     pressione uma tecla para fechar a janela.
+
+O INSTALAR.bat baixa as bibliotecas do programa, inclusive o Playwright.
+Se aparecer algum erro durante a instalação, NÃO comece um lote: peça
+ajuda ao suporte de informática.
+
+O programa também precisa do GOOGLE CHROME instalado. Se faltar,
+instale-o pelo site oficial: https://www.google.com/chrome/
+
+
+4. ABRIR O PROGRAMA
+------------------
+  a) Entre na pasta do Higienizador.
+  b) Dê dois cliques em INICIAR.bat.
+  c) Aguarde aparecer a janela "Higienizador".
+
+Uma janela preta pode permanecer aberta enquanto o Higienizador estiver
+em funcionamento. Isso é normal. Não feche essa janela durante um lote.
+
+
+5. PRIMEIRO USO — PASSO A PASSO
+------------------------------
+  1) UNIDADE DE SAÚDE
+     Escolha sua UBS no campo "Unidade de saúde". O endereço em
+     "Servidor PEC" será preenchido automaticamente. Confirme que
+     corresponde à unidade correta.
+
+  2) LIMITE DO LOTE
+     Selecione 1, 5, 10, 25, 50 ou Todos.
+     Para conhecer o programa, comece com 1 ou 5.
+
+  3) RELATÓRIO CSV
+     Clique em "Selecionar CSV" e escolha o arquivo de cidadãos
+     vinculados exportado do próprio PEC. Depois clique em
+     "Carregar relatório".
+
+  4) ABRIR O CHROME
+     Clique em "Abrir Chrome". Se necessário, faça login no PEC
+     com sua conta de usuário. Espere a página carregar.
+
+  5) EXECUTAR O LOTE
+     Clique em "Iniciar lote". Leia a mensagem exibida, confira a
+     quantidade e as opções e confirme somente se estiver tudo certo.
+
+  6) ACOMPANHAR
+     Observe os quadros "Concluídos", "Pendências e revisão" e
+     "Na fila", além do "Registro de atividades".
+     O texto SALVO_VERIFICADO indica que o programa releu o cadastro
+     no PEC e encontrou a marcação de mudança territorial.
+
+  7) FINALIZAR
+     Confira os resultados e o relatório do PEC antes de considerar
+     o trabalho encerrado. Você pode consultar os registros locais no
+     menu "Abrir pasta de relatórios".
+
+
+6. CUIDADOS IMPORTANTES COM AS EXCEÇÕES
+--------------------------------------
+O menu "Exceções" permite escolher entre conferência automática e
+assistida após salvar, além de realizar intervenções manuais.
+
+Se houver erro ou divergência, o Higienizador pode pausar o lote.
+Confira o cadastro antes de continuar, pular ou registrar pendência.
+Nunca registre manualmente como salvo algo que você não conferiu.
+
+
+7. ERROS COMUNS E COMO RESOLVER
+------------------------------
+O PROGRAMA NÃO ABRE:
+  - Confira se Python está instalado (item 2).
+  - Execute INSTALAR.bat e observe se houve erro.
+
+APARECE "NO MODULE NAMED PLAYWRIGHT":
+  - Execute INSTALAR.bat novamente com acesso à internet.
+
+O CHROME NÃO ABRE:
+  - Verifique se o Google Chrome está instalado.
+  - Feche outras sessões do Higienizador antes de tentar novamente.
+
+O CSV NÃO CARREGA:
+  - Confira se o arquivo foi selecionado e termina em .csv.
+  - Use um relatório de cidadãos vinculados exportado do PEC.
+
+NÃO CONECTA AO SERVIDOR:
+  - Confirme a UBS selecionada e o endereço do PEC.
+  - Verifique a rede da unidade; peça apoio à informática.
+
+O LOTE PAROU:
+  - Leia as últimas linhas do "Registro de atividades".
+  - Confira o cadastro no PEC antes de tomar alguma decisão.
+  - Use "Pausar", "Continuar" ou "Parar" conforme necessário.
+
+Ao pedir ajuda, envie a mensagem do erro, mas evite compartilhar
+CPF, CNS e outros dados pessoais em grupos públicos.
+
+
+
+LICENÇA
+-------
+© 2026 Pc-House Informatica — CNPJ 38.151.250/0001-03.
+Todos os direitos reservados.

@@ -1,0 +1,10 @@
+MGC1.0.6.7 - Ajuste visual do log de espera
+
+Base: MGC1.0.6.5 estavel. NAO inclui o tratamento experimental da 1.0.6.6.
+
+Ao Salvar, uma unica linha exibe TENTATIVA 0, depois TENTATIVA 1.
+A barra de 10 segundos so aparece apos os dois primeiros segundos sem conclusao.
+Apenas a linha da tentativa e alterada, preservando os logs anteriores de telefone.
+Aguardar ate 3 janelas de 10 s, um unico clique e conferencia final mantidos.
+
+Teste inicialmente 1 cidadao antes de usar lotes.
